@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .contact-nav {
+  background-color: rgb(226, 226, 226);
+}
+
+header .contact-nav li {
+  list-style: none;
+}
+
+header .contact-nav li::before {
+  content: "\f095";
+}
+
+header nav {
+  padding: 0 45px;
+  background-color: #fff;
+}
+
+header nav .navbar-brand {
+  font-family: "Oswald", sans-serif;
+  font-size: 26px;
+}
+
+.navbar .collapse {
+  flex-grow: 0;
+}
