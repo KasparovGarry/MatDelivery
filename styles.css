@@ -4,16 +4,12 @@
   box-sizing: border-box;
 }
 
-header .contact-nav {
-  background-color: rgb(226, 226, 226);
+.section {
+  padding: 60px 0;
 }
 
-header .contact-nav li {
-  list-style: none;
-}
-
-header .contact-nav li::before {
-  content: "\f095";
+h1 {
+  padding-bottom: 30px;
 }
 
 header nav {
@@ -28,4 +24,53 @@ header nav .navbar-brand {
 
 .navbar .collapse {
   flex-grow: 0;
+}
+
+.navbar ul li a {
+  padding: 15px 30px;
+}
+
+.banner {
+  height: 80vh;
+}
+
+.banner img {
+  height: 80vh;
+  width: auto;
+  object-fit: cover;
+}
+
+.banner .carousel-item {
+  position: relative;
+}
+
+.banner .carousel-item span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 42px;
+  color: #ffffff;
+  padding: 60px 40px;
+  background-color: rgba(53, 86, 122, 0.548);
+}
+
+.about-text h1,
+.services h1 {
+  text-align: center;
+}
+
+.about-text .col-lg img {
+  width: auto;
+  height: 275px;
+  object-fit: cover;
+}
+
+.services .col-lg {
+  height: 350px;
+  background-color: rgb(0, 0, 0);
+}
+
+.services .col-lg:nth-child(2) {
+  margin: 0 60px;
 }
