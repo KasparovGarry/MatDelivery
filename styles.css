@@ -8,26 +8,64 @@
   padding: 60px 0;
 }
 
+.alt-bg {
+  background-color: rgb(230, 230, 230);
+}
+
 h1 {
   padding-bottom: 30px;
 }
 
 header nav {
-  padding: 0 45px;
+  padding: 0 45px!important;
   background-color: #fff;
+}
+
+header nav .container-fluid {
+  display: flex;
+  align-items: center!important;
 }
 
 header nav .navbar-brand {
   font-family: "Oswald", sans-serif;
   font-size: 26px;
+  color: rgb(31, 90, 34)!important;
 }
 
 .navbar .collapse {
   flex-grow: 0;
 }
 
+.navbar ul li {
+  display: flex;
+  align-items: center;
+}
+
 .navbar ul li a {
-  padding: 15px 30px;
+  position: relative;
+  padding: 20px 20px!important;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black!important;
+}
+
+.navbar ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 4px;
+  width: 70%;
+  background-color: rgb(31, 90, 34);
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.navbar ul li a:hover::after {
+  opacity: 1;
 }
 
 .banner {
